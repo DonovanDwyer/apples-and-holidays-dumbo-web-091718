@@ -62,7 +62,7 @@ def all_supplies_in_holidays(holiday_hash)
       if day.to_s.include? "_"
         new_day = day.to_s.split("_")
         new_day.map {|x| x.capitalize!}
-        new_day.to_s
+        new_day = new_day.join(" ")
         puts "  #{new_day}: #{supplies.join(",")}"
       else
         puts "  #{day.to_s.capitalize}: #{supplies.join(", ")}"
