@@ -76,4 +76,4 @@ end
 
 
 
-pry.binding
+#pry.binding
